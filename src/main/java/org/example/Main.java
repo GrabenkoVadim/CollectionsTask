@@ -1,0 +1,21 @@
+package org.example;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        MyList<String> list = new MyList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        list.add("Date");
+        list.add("Elderberry");
+
+        System.out.println("MyList contents: " + list);
+        list.remove("Cherry");
+        System.out.println("After removal: " + list);
+        list.add(2, "Coconut");
+        System.out.println("After insertion: " + list);
+        System.out.println("Element at index 1: " + list.get(1));
+    }
+}
